@@ -67,7 +67,8 @@ img {
 
 .navbar.dark {
   background: #FFD845;
-  padding: 0 5rem;
+  padding: 1rem 5rem;
+  height: 6vh;
 }
 
 .navbar.flex {
@@ -122,10 +123,6 @@ img {
   background: #333;
   border-radius: 15px;
   transition: all .3s;
-}
-
-.navbar.dark .menu-btn {
-  height: 30px;
 }
 
 .navbar.dark .menu-btn-burger {
@@ -244,6 +241,15 @@ img {
   color: #333;
   margin-top: 5rem;
   transition: all .3s;
+  animation: down 1s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes down {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(10px);
+  }
 }
 
 .text i:hover {
@@ -416,12 +422,20 @@ img {
 /*Contact*/
 .contact {
   padding: 5rem 0;
+  height: 100vh;
+}
 
+.contact .container {
+  height: 100%;
+}
+
+.contact-box {
+  height: 100%;
 }
 
 .contact-text {
   justify-self: flex-start;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .contact-text p {
