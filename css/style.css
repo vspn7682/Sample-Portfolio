@@ -62,6 +62,12 @@ img {
   left: 0;
   top: 0;
   z-index: 100;
+  transition: all .3s;
+}
+
+.navbar.dark {
+  background: #FFD845;
+  padding: 0 5rem;
 }
 
 .navbar.flex {
@@ -72,6 +78,10 @@ img {
   font-size: 3rem;
   color: #333;
   transition: all 0.3s;
+}
+
+.navbar.dark .logo a {
+  font-size: 2rem;
 }
 
 .logo a:hover {
@@ -112,6 +122,20 @@ img {
   background: #333;
   border-radius: 15px;
   transition: all .3s;
+}
+
+.navbar.dark .menu-btn {
+  height: 30px;
+}
+
+.navbar.dark .menu-btn-burger {
+  width: 20px;
+  height: 4px;
+}
+
+.navbar.dark .menu-btn-burger::before, .navbar.dark .menu-btn-burger::after {
+  width: 30px;
+  height: 4px;
 }
 
 .menu-btn-burger::before {
