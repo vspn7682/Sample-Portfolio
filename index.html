@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Daniels | Portfolio</title>
+    <title> Shailesh Parshionikar | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
 
     <script
       src="https://kit.fontawesome.com/d1496d37d9.js"
@@ -21,15 +23,23 @@
       <h1 class="opaque">Hellow</h1>
       <div class="container">
         <div class="navbar flex">
-          <h1 class="logo"><a href="index.html">AD.</a></h1>
+          <h1 class="logo"><a href="index.html">Shailesh.</a></h1>
           <div class="menu-btn">
             <div class="menu-btn-burger"></div>
           </div>
         </div>
         <div class="showcase-content">
           <div class="text">
-            <p data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">I'm Alex Daniels.</p>
-            <h1 data-aos="fade-down" data-aos-duration="1000">A Freelance <br />UI/UX Designer.</h1>
+            <p
+              data-aos="fade-down"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              I'm Shailesh Parshionikar.
+            </p>
+            <h1 data-aos="fade-down" data-aos-duration="1000">
+              A Freelance <br />UI/UX Designer.
+            </h1>
             <a href="#about"><i class="fa fa-angle-double-down"></i></a>
           </div>
           <div class="social">
@@ -43,6 +53,7 @@
         <ul>
           <li><a href="#showcase">Home.</a></li>
           <li><a href="#about">About Me.</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects.</a></li>
           <li><a href="#">Blog.</a></li>
           <li><a href="#contact">Contact.</a></li>
@@ -56,6 +67,9 @@
     <section class="about" id="about">
       <div class="container">
         <div class="about-box grid">
+          <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+            <img src="img/about.jpg" alt="" />
+          </div>
           <div class="about-content">
             <p>I'm an Open Book</p>
             <h1 class="head">About <br />Me.</h1>
@@ -68,8 +82,50 @@
               >Learn More <i class="fa fa-chevron-right right"></i
             ></a>
           </div>
-          <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Services-->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="service-box grid">
+          <div class="service-content">
+            <p>A Brief Summary of</p>
+            <h1 class="head">My <br>Serivces.</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores est inventore nam sapiente tempore id odit doloribus repudiandae rem, eligendi ratione, error itaque reprehenderit cumque?
+            </p>
+            <a href="#" class="btn btn-primary">Learn More <i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="service-img" data-aos="fade-left" data-aos-duration="1000">
+            <div class="icon">
+              <i class="fa fa-desktop fa-5x"></i>
+            </div>
+            <div class="description">
+              <h2>Front End Web Development.</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ut explicabo quas reprehenderit officia quos!
+              </p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-cogs fa-5x"></i>
+            </div>
+            <div class="description">
+              <h2>Web Maintenance.</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ut explicabo quas reprehenderit officia quos!
+              </p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-code fa-5x"></i>
+            </div>
+            <div class="description">
+              <h2>Free Web Dev Tutorials.</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ut explicabo quas reprehenderit officia quos!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -79,8 +135,21 @@
     <section class="projects" id="projects">
       <div class="container">
         <div class="project-box grid">
-          <div class="project-img" data-aos="fade-right" data-aos-duration="1000">
-            <a href="#"><img src="img/project1.png" alt="" /></a>
+          <div
+            class="project-img"
+          >
+           <div class="pro1" data-aos="fade-down-right" data-aos-duration="1000">
+             <a href="#"><img src="img/project1.png" alt=""></a>
+           </div>
+           <div class="pro2" data-aos="fade-down-left" data-aos-duration="1000">
+             <a href="#"><img src="img/project2.png" alt=""></a>
+           </div>
+           <div class="pro3" data-aos="fade-up-right" data-aos-duration="1000">
+             <a href="#"><img src="img/project3.png" alt=""></a>
+           </div>
+           <div class="pro4" data-aos="fade-up-left" data-aos-duration="1000">
+             <a href="#"><img src="img/project4.png" alt=""></a>
+           </div>
           </div>
           <div class="project-content">
             <p>Take a look at</p>
@@ -116,12 +185,16 @@
               >Learn More <i class="fa fa-chevron-right right"></i
             ></a>
           </div>
-          <div class="skills-graph" data-aos="fade-left" data-aos-duration="1000">
+          <div
+            class="skills-graph"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <div class="graph-box">
               <div class="box">
                 <p>HTML</p>
                 <div class="inner-percent">
-                  <div class="outer-percent"></div>
+                  <div class="outer-percent html"></div>
                 </div>
               </div>
               <div class="box">
@@ -149,7 +222,12 @@
           <div class="contact-text">
             <p>Let us know</p>
             <h1>What you think.</h1>
-            <img src="img/envelope.png" alt=""  data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="img/envelope.png"
+              alt=""
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
           </div>
           <div class="contact-form">
             <h1>Leave A Message.</h1>

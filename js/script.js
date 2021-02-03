@@ -4,6 +4,8 @@ const navbar = document.querySelector(".navbar");
 const links = document.querySelectorAll(".main-menu ul li a");
 const up = document.querySelector("#top");
 
+
+
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
@@ -45,10 +47,9 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", (e) => {
   if (
-    document.body.scrollTop > 300 ||
-    document.documentElement.scrollTop > 300
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
   ) {
-    console.log("hi");
     up.classList.add("fadeIn");
     up.classList.remove("fadeOut")
   } else {
@@ -61,3 +62,4 @@ up.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo(0,0);
 })
+
