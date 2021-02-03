@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Daniels | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/d1496d37d9.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!--Showcase-->
     <div class="showcase" id="showcase">
+      <a href="#" id="top"><i class="fa fa-arrow-up"></i></a>
       <h1 class="opaque">Hellow</h1>
       <div class="container">
         <div class="navbar flex">
@@ -23,14 +28,14 @@
         </div>
         <div class="showcase-content">
           <div class="text">
-            <p>I'm Alex Daniels.</p>
-            <h1>A Freelance <br />UI/UX Designer.</h1>
+            <p data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">I'm Alex Daniels.</p>
+            <h1 data-aos="fade-down" data-aos-duration="1000">A Freelance <br />UI/UX Designer.</h1>
             <a href="#about"><i class="fa fa-angle-double-down"></i></a>
           </div>
           <div class="social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook" id="fb"></i></a>
+            <a href="#"><i class="fa fa-twitter" id="tweet"></i></a>
+            <a href="#"><i class="fa fa-instagram" id="inst"></i></a>
           </div>
         </div>
       </div>
@@ -63,7 +68,7 @@
               >Learn More <i class="fa fa-chevron-right right"></i
             ></a>
           </div>
-          <div class="about-img">
+          <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/about.jpg" alt="" />
           </div>
         </div>
@@ -74,7 +79,7 @@
     <section class="projects" id="projects">
       <div class="container">
         <div class="project-box grid">
-          <div class="project-img">
+          <div class="project-img" data-aos="fade-right" data-aos-duration="1000">
             <a href="#"><img src="img/project1.png" alt="" /></a>
           </div>
           <div class="project-content">
@@ -88,7 +93,7 @@
             <a href="#" class="btn btn-primary"
               >Learn More <i class="fa fa-chevron-right right"></i
             ></a>
-            <img src="img/works.png" alt="">
+            <img src="img/works.png" alt="" />
           </div>
         </div>
       </div>
@@ -100,13 +105,18 @@
         <div class="skills-box grid">
           <div class="skills-content">
             <p>Knowledge is Everything</p>
-            <h1 class="class">My <br>Skills.</h1>
+            <h1 class="class">My <br />Skills.</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit incidunt nihil molestias. Distinctio, dolorum! Obcaecati pariatur voluptatibus perferendis harum possimus nihil modi veritatis illum?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              velit incidunt nihil molestias. Distinctio, dolorum! Obcaecati
+              pariatur voluptatibus perferendis harum possimus nihil modi
+              veritatis illum?
             </p>
-            <a href="#" class="btn btn-primary">Learn More <i class="fa fa-chevron-right right"></i></a>
+            <a href="#" class="btn btn-primary"
+              >Learn More <i class="fa fa-chevron-right right"></i
+            ></a>
           </div>
-          <div class="skills-graph">
+          <div class="skills-graph" data-aos="fade-left" data-aos-duration="1000">
             <div class="graph-box">
               <div class="box">
                 <p>HTML</p>
@@ -137,9 +147,9 @@
       <div class="container">
         <div class="contact-box grid">
           <div class="contact-text">
-             <p>Let us know</p> 
-              <h1>What you think.</h1>
-              <img src="img/envelope.png" alt="">
+            <p>Let us know</p>
+            <h1>What you think.</h1>
+            <img src="img/envelope.png" alt=""  data-aos="fade-right" data-aos-duration="1000">
           </div>
           <div class="contact-form">
             <h1>Leave A Message.</h1>
@@ -168,10 +178,12 @@
 
     <footer>
       <div class="container">
-        <p>
-          Copyright &copy;-2021. Alex Daniels. All Rights Reserved.
-        </p>
+        <p>Copyright &copy;-2021. Alex Daniels. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
