@@ -95,6 +95,11 @@ img {
   z-index: 100;
 }
 
+/* .navbar.sticky {
+  position: a;
+  top: 0;
+} */
+
 .logo {
   font-family: "Kaushan Script", sans-serif;
   font-size: 3rem;
@@ -349,7 +354,7 @@ img {
 }
 
 .project-img {
-  height: 600px;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);

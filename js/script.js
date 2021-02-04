@@ -46,3 +46,11 @@ up.addEventListener("click", (e) => {
   e.preventDefault();
   window.scrollTo(0, 0);
 });
+
+// window.addEventListener('scroll', () => {
+//   if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+//     navbar.classList.add('sticky');
+//   } else {
+//     navbar.classList.remove('sticky');
+//   }
+// })
