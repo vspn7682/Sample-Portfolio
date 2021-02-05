@@ -58,6 +58,8 @@ img {
 
 #top:hover {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  background: green;
+  color: #fff;
 }
 
 /*Showcase*/
@@ -65,45 +67,33 @@ img {
   background: #ffd845;
   width: 100%;
   height: 100vh;
-  overflow: auto;
-  position: relative;
-  overflow: hidden;
 }
 
 .showcase .container {
-  padding-top: 1rem;
-}
-
-.opaque {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Dancing Script", sans-serif;
-  font-size: 100rem;
-  color: rgba(255, 255, 255, 0.1);
-  z-index: 1;
+  padding: 0;
+  height: 100vh;
 }
 
 /*Navbar*/
 .navbar {
-  position: relative;
+  position: fixed;
   width: 100%;
+  /* max-width: 1100px; */
+  z-index: 110;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
+  padding: 0 5rem;
+  background: #ffd845;
 }
 
-/* .navbar.sticky {
-  position: a;
-  top: 0;
-} */
+.navbar.sticky {
+  background: #ffd845;
+}
 
 .logo {
   font-family: "Kaushan Script", sans-serif;
   font-size: 3rem;
   color: #333;
+  flex: 1;
 }
 
 .logo a {
@@ -161,10 +151,11 @@ img {
   width: 100%;
   margin: 20rem auto;
   height: 60vh;
+  padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  z-index: 100;
+  z-index: 8;
 }
 
 .text {
@@ -682,7 +673,7 @@ footer p {
   }
 
   .showcase-content {
-    margin: 10rem auto;
+    margin: 20rem auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -705,7 +696,7 @@ footer p {
   }
 
   .showcase-content {
-    margin: 10rem auto;
+    margin: 20rem auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
