@@ -47,13 +47,13 @@ up.addEventListener("click", (e) => {
   window.scrollTo(0, 0);
 });
 
-window.addEventListener("scroll", () => {
-  if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
-  ) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (
+//     document.body.scrollTop > 500 ||
+//     document.documentElement.scrollTop > 500
+//   ) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// });

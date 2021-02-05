@@ -67,6 +67,7 @@ img {
   background: #ffd845;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .showcase .container {
@@ -74,18 +75,25 @@ img {
   height: 100vh;
 }
 
+.opaque {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 100rem;
+  font-family: "Kaushan Script", sans-serif;
+  color: rgba(255, 255, 255, 0.1);
+}
+
 /*Navbar*/
 .navbar {
   position: fixed;
   width: 100%;
-  /* max-width: 1100px; */
+  max-width: 1500px;
+  margin: auto;
   z-index: 110;
   display: flex;
   padding: 0 5rem;
-  background: #ffd845;
-}
-
-.navbar.sticky {
   background: #ffd845;
 }
 
