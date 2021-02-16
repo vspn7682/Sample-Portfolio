@@ -588,6 +588,11 @@ footer .container {
   padding: 0 5rem;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 footer p {
   font-size: 1.1rem;
   font-weight: 500;
@@ -754,5 +759,15 @@ footer p {
 
   .contact-text img {
     width: 250px;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .footer-wrap {
+    flex-direction: column;
+  }
+
+  .footer-wrap p {
+    margin: 0;
   }
 }
