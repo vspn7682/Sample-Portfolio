@@ -432,7 +432,7 @@ img {
 .graph-box {
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1rem;
   padding: 0 3rem;
@@ -443,15 +443,10 @@ img {
   font-weight: 500;
 }
 
-.graph-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .html,
 .css,
-.js {
+.js,
+.react {
   text-align: center;
   animation: fill 1s alternate-reverse infinite;
 }
@@ -462,6 +457,10 @@ img {
 
 .js {
   animation: fill 1s alternate-reverse infinite 0.6s;
+}
+
+.react {
+  animation: fill 1s alternate-reverse infinite 0.9s;
 }
 
 @keyframes fill {
@@ -475,7 +474,8 @@ img {
 
 .html p,
 .css p,
-.js p {
+.js p,
+.react p {
   font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -483,7 +483,8 @@ img {
 
 .html img,
 .css img,
-.js img {
+.js img,
+.react img {
   width: 70px;
 }
 
